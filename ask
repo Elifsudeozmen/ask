@@ -5,4 +5,12 @@ echo "you need to set environment variables. Check README file for more informat
 exit 1
 fi
 
+user_input="$*"
+stdin_input =""
+
+if [ ! -t 0 ]; then
+stdin_input=$(cat)
+fi
+user_input="$user_input"$'\n'"$stdin_input"
+
 
