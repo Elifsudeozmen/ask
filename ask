@@ -14,3 +14,20 @@ fi
 user_input="$user_input"$'\n'"$stdin_input"
 
 
+response=$(curl -s "$ASK_API_URL" \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer $ASK_API_KEY" \
+  -d "{
+    \"model\": \"$ASK_MODEL\",
+    \"messages\": [
+      {
+        \"role\": \"system\",
+        \"content\": \"You are a CLI tool. Output plain text only.\"
+      },
+      {
+        \"role\": \"user\",
+        \"content\": \"$user_input\"
+      }
+    ]
+  }")
+
