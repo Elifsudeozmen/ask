@@ -1,0 +1,14 @@
+-How to Contribute
+
+1.Fork the repository
+2.Create a new branch (feature-name)
+3.Make changes
+4.Commit clearly (git commit -m "Add feature")
+5.Push and open a pull request
+
+
+-Guidelines
+*Keep code simple and readable
+*Follow Bash scripting best practices
+*Test your changes
+*Update documentation if needed
