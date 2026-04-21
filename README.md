@@ -39,5 +39,8 @@ Command: ask-fix clouk
 Return: cloud
 
 
+Chosen LICENSE: MIT License 
+Justification: The MIT license is simple and permissive which makes it ideal for small CLI tools.
+
 
 
